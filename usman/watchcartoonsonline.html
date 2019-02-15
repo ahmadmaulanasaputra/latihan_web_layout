@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	html, body {
+		margin: 0;
+	}
+	body {
+		background: #eaeaea;
+	}
+	.nav {
+		background-color: #dd3333;
+		color: white;
+	}
+	.nav-left {
+		float: left;
+	}
+	.nav-right {
+		float: right;
+	}
+	.nav-left .link {
+		float: left;
+		padding: 10px;
+		color: white;
+		text-decoration: none;
+	}
+	.nav-right div {
+		float: right;
+		padding: 10px;
+	}
+	.clear {
+		clear: both;
+	}
+	.container {
+		width: 960px;
+		margin: auto;
+	}
+	.content-left {
+		float: left;
+		width: 30%;
+		padding-top: 20px;
+	}
+	.content-right {
+		float: right;
+		width: 70%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	.search-box {
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.search-input {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 10px;
+	}
+	.search-icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: #dd3333;
+		padding: 10px;
+		color: white;
+	}
+	.trending-title {
+		padding: 10px;
+		background: #dd3333;
+		color: white;
+	}
+	.trending-posts {
+		padding: 10px;
+		background: white;
+	}
+	.post {
+		padding: 20px;
+		color: white;
+		background: #dd3333;
+		margin: 5px;
+	}
+	.box-container {
+		float: left;
+		width: 33.3%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	.box-image {
+		height: 200px;
+		overflow: hidden;
+	}
+	.box-image img {
+		width: 100%;
+	}
+	.box-title {
+		padding: 20px 10px 10px;
+		background: white;
+
+	}
+	.box {
+		position: relative;
+	}
+	.genre {
+		position: absolute;
+		bottom: 55px;
+		background: #dd3333;
+		padding: 5px 8px;
+		color: white;
+		font-weight: bold;
+		font-family: sans-serif;
+	}
+
+	.page-container {
+		float: left;
+		width: 3%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	.garis {
+		position: absolute;
+		bottom: 65px;
+		background: #dd3333;
+		padding: 1px 97px;
+		color: #dd3333;
+		font-size: 2px;
+	}
+
+	.page {
+		float: left;
+		display: inline-block;
+		background: #dd3333;
+		padding: 5px 10px;
+		font-family: sans-serif;
+		margin: 10px;
+		color: grey;
+	}
+
+	.page-active {
+		float: left;
+		display: inline-block;
+		background: #dd3333;
+		padding: 5px 10px;
+		font-family: sans-serif;
+		margin: 10px;
+		color: white;
+		background: #dd3333;
+}
+
+	.footer {
+		float: left;
+		clear: both;
+		background-color: #1e73be;
+		width: 100%;
+		padding-top: 12px;
+		padding-bottom: 15px;
+	}
+
+	.footer span {
+		color: red;
+	}
+
+	.terakhir {
+		float: left;
+		clear: both;
+		background: #dd3333;
+		width: 125px;
+	}
+
+	.terakhir img {
+		margin-left: 10px;
+		width: 50px;
+		height: 25px;
+		opacity: .5;
+	}
+
+	.terakhir span {
+		font-weight: bold;
+		color: white;
+	}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<div class="container">
+			<div class="nav-left">
+				<a href="https://google.com" class="link">HOME</a>
+				<a class="link">CARTOON MOVIES</a>
+				<a class="link">CARTOON SERIES</a>
+				<a class="link">YEARS</a>
+				<a class="link">GENRES</a>
+			</div>
+			<div class="nav-right">
+				<div>Search</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="container">
+			<div class="content-left">
+				<div class="search-box">
+					<input class="search-input" />
+					<div class="search-icon">Search</div>
+				</div>
+
+				<div class="trending-title">TRENDING POSTS</div>
+				<div class="trending-posts">
+					<div class="post">Dragon Ball Super: Broly (2018)</div>
+					<div class="post">Dino King (2012)</div>
+					<div class="post">E.T. the Extra-Terrestrial (1982)</div>
+					<div class="post">The Sword in the Stone (1963)</div>
+					<div class="post">Scooby-Doo and the Alien Invaders (2000)</div>
+					<div class="post">Batman Beyond: Return of the Joker (2000)</div>
+					<div class="post">Bee Movie (2007)</div>
+					<div class="post">Beowulf (2007)</div>
+					<div class="post">On Angel Wings (2014)</div>
+					<div class="post">Justice League: The New Frontier (2008)</div>
+					<div class="post">Dragon Ball Super (2015- )</div>
+					<div class="post">Gargoyles Season 3 (1996)</div>
+					<div class="post">Gargoyles Season 2 (1995)</div>
+					<div class="post">Gargoyles Season 1 (1994)</div>
+					<div class="post">Fantastic Mr. Fox (2009)></div>
+				</div>
+			</div>
+			<div class="content-right">
+				<h2 class="latest-title">Latest</h2>
+				<div class="latest-posts">
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2019/01/Dragon-Ball-Super-Broly-2018-1-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								Dragon Ball Super Broly (2018)
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Action</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2019/01/Godzilla-The-Planet-Eater-2018-140x200.jpg" />
+							</div>
+							<div class="box-title">
+								Godzilla the Panet Eater (2018)
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Action</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2019/01/Sea-Monsters-2-2018-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								Sea Monster 2 Series (2018)
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Adventure</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2019/01/Tigtone-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								Tigtone the Series (2018-2019)
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Action</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2016/10/Wabbit-A-Looney-Tunes-Production-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								Wabbit: A Looney Tunes Production
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Adventure</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2019/01/Carmen-Sandiego-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								Carmen Sandiego (2018-Now)
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Adventure</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2018/01/Trolls-The-Beat-Goes-On-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								Trolls the Beat Goes On! Season 5
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Adventure</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2019/01/The-Legend-of-Secret-Pass-2019-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								The Legend of Secret Pass (2019)
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Family</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2019/01/Reign-of-the-Supermen-2019-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								Reign of the Superman (2019)
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Action</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2019/01/How-the-Toys-Saved-Christmas-1996-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								How the Toy Saved Christmas
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Adventure</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2019/01/Norm-of-the-North-Keys-to-the-Kingdom-2018-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								Norm of the North Keys to the Kingdom
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Adventure</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2019/01/Cinderella-and-the-Secret-Prince-2018-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								Cinderella and the Secret Prince
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Adventuren</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2015/11/SpongeBob-SquarePants-Season-6-7-8-9-full-episodes-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								Sponge Bob Squarepants the Series
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Comedy</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2019/01/Ghost-in-the-Shell-Arise-Border-4-Ghost-Stands-Alone-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								Ghost in the Shell Arise Border 4
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Action</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="box-container">
+						<div class="box">
+							<div class="box-image">
+								<img src="http://watchcartoonsonline.tv/wp-content/uploads/2019/01/Ghost-in-the-Shell-Arise-Border-3-Ghost-Tears-2014-140x200.jpg" alt="" />
+							</div>
+							<div class="box-title">
+								Ghost in the Shell Arise Border 3
+							</div>
+							<div class="garis">garis</div>
+							<div class="genre">Action</div>
+						</div>
+					</div>
+					<!-- /.box-container -->
+					<div class="clear"></div>
+				</div>
+				<div class="latest-page">
+					<div class="page-active">1</div>
+					<div class="page">2</div>
+					<div class="page">3</div>
+					<div class="page">4</div>
+					<div class="page">></div>
+					<div class="page">>></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		© 2018 <span>WatchCartoonsOnline.Tv</span> All Right Reserved
+	</div>
+	<div class="terakhir">
+		<img src="data:image/png;base64,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"> <span>150</span>
+	</div>
+</body>
+</html>
