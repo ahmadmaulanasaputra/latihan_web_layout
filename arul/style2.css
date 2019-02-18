@@ -1,0 +1,90 @@
+*{
+	margin:0;
+	padding:0;
+}
+.container1{
+	background-color:#3b5998;
+	display:block;
+}
+.nav-left{
+	float:left;
+}
+.nav-left img{
+	width:150px;
+	height:60px;
+	margin-left:150px;
+}
+.nav-left input{
+	position:relative;
+	right:-500px;
+	top:-15px;
+	margin-right:10px;
+}
+.login{
+	background-color:#4267b2;
+	border-color:#29487d;
+	color:white;
+}
+.nav-right{
+	float:right;
+}
+.nav-right span{
+	color:white;
+	position:relative;
+	right:270px;
+	margin-right:40px;
+	bottom:-10px;
+}
+.clearfix{
+	clear:both;
+}
+.nav-left a{
+	color:#9cb4d8;
+	position:relative;
+	float:right;
+	right:-330px;
+	font-size:14px;
+	text-decoration:none;
+}
+.nav-left a:hover{
+	text-decoration:underline;
+}
+.gradient{
+	background-color:white;
+}
+.body-left{
+	max-width:300px;
+	position:relative;
+	right:-170px;
+}
+.keterangan span{
+	color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-top: 30px;
+    width: 100px;
+    word-spacing: -1px;
+}
+.body-left{
+	float:left;
+}
+.body-right{
+	float:right;
+}
+.body-right h1{
+	position:relative;
+	right:400px;
+	font-size:36px;
+}
+.body-right span{
+	position:relative;
+	right:400px;
+	font-size:19px;
+}
+.clearfix{
+	clear:both;
+}
+.placeholder{
+	float:right;
+}
