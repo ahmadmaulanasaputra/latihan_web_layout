@@ -4,13 +4,10 @@
 	font-family:sans-serif;
 
 }
-.all{
-	background-color:#dde5d0;
-}
 .header{
 	background-color: #d11141;
 	width:100%;
-	height:50px;
+	height:60px;
 	float:right;
 }
 .cari{
@@ -19,6 +16,8 @@
 	position: relative;
 	left: 160px;
 	bottom: -1px;
+	line-height: 40px;
+    padding: 0 12px 0 45px;
 }
 .header span{
 	display:inline-block;
@@ -38,8 +37,53 @@
 }
 .header a{
 	position:relative;
-	left:15%;
+	left:320px;
 	color:white;
+	text-decoration:none;
+	font-size: 12px;
+    line-height: 1.4;
+}
+.header a:hover{
+	text-decoration:underline;
+}
+.high{
+	position:relative;
+	left:400px;
+	height:25px;
+	width:5%;
+	color:white;
+	background-color:#a30046;
+}
+.high:hover{
+	background-color:white;
+	color:black;
+}
+.low{
+	position:relative;
+	left:400px;
+	height:25px;
+	width:5%;
+	background-color:white;
+}
+.low:hover{
+	color:#a30046;
+}
+.keranjang{
+	float:right;
+	position:relative;
+	width:30px;
+	height:20px;
+	position:relative;
+	right:630px;
+}
+.keranjang img{
+	width:30px;
+	height:20px;
+	position:relative;
+	right:300px;
+}
+.clearfix{
+	clear:both;
 }
 .menu{
 	background-color:#bc0f3a;
@@ -60,53 +104,172 @@
 	text-decoration:underline;
 }
 .navigasi a{
+	text-decoration:none;
 	position:relative;
-	left:120%;
+	left:60px;
+}
+.navigasi a:hover{
 	text-decoration:underline;
 }
-.tabel{
-	text-align:center;
-	margin:1%;
-	opacity:;
-	margin-top:20px;
-	margin-right:20px;
-	position:relative;
-	left:12px;
+.table{
+	background-color: #f5f5f5;
+	height:200px;
+}
+.kontainer{
+	max-width:1200px;
+	margin:auto;
+}
+.main-top{
 	background-color:white;
+	box-sizing:border-box;
+	outline-color: transparent;
+	border-top: 1px solid #eee;
+	position:relative;
+	bottom:-20px;
 }
-.tabel tr td a{
-	color:grey;
+.main-top ul li{
+	list-style:none;
+	display:inline-block;
+	padding:20px 10px 20px 10px;
+	margin-left:32px;
+}
+.main-top ul li a{
+	color:#bbb;
 	text-decoration:none;
+	font-size: 14px;
+    line-height: 1.4;
+	transition: color .3s ease-out;
 }
-.tabel tr td a:hover{
-	color:black;
+.main-top ul li a:hover{
+	color:#333;
+	font-weight:bold;
+}
+.main-bottom{
+	margin-top:22px;
+	background-color: white;
+	padding:30px 10px 20px 10px;
+	height:50px;
+}
+.nophone{
+	color: #bbb;
+	display:inline-block;
+	font-size:14px;
+	margin-left:20px;
+}
+.nominal{
+	color:#bbb;
+	display:inline-block;
+	position:relative;
+	right:-170px;
+	font-size:14px;
+}
+.harga{
+	color:#bbb;
+	display:inline-block;
+	font-size:12px;
+	position:relative;
+	right:-380px;
+}
+.rp{
+	color:#333;
+	font-weight:bold;
+	display:inline-block;
+	position:relative;
+	right:-345px;
+	bottom:-30px;
+}
+.main-bottom button{
+	float:right;
+	width:auto;
+	height:auto;
+	background-color: #d71149;
+    border-color: #d71149;
+	opacity:.32;
+	color:#fff;
+	box-sizing:border-box;
+	cursor:not-allowed;
+	padding:12px 36px 12px 36px;
+	font-weight:bold;
+	margin-right:20px;
+}
+.clearfix{
+	clear:right;
+}
+.line1{
+	border-bottom: 1px solid #dddfe2;
+	display:inline-block;
+	width:200px;
+	position:relative;
+	top:-20px;
+	right:-20px;
+}
+.line2{
+	border-bottom: 1px solid #dddfe2;
+	display:inline-block;
+	width:250px;
+	position:relative;
+	top:-20px;
+	right:-80px;
+}
+.search{
+	background-color:#f5f5f5;
 }
 .search h4{
 	position:relative;
 	left:25px;
 	display:inline-block;
+	margin-top:10px;
 }
 .search ul li{
 	position:relative;
 	left:180px;
 	top: -17px;
 	display:inline-block;
+	margin-right:10px;
 }
 .search a{
 	position:relative;
 	left:20px;
-	color:black;
+	color:#333;
 }
 .link-button{
 	text-decoration: none;
-	background-color: #eeeeee;
-	color: black;
-	padding: 2px;
+	padding: 4px 12px;
 	border: 1px solid #c2c2c2;
-	border-radius:1px;
+	margin-right:10px;
+	border-radius: 100px;
 	font-size:12px;
 	position:relative;
-	left:-100px;
+	border-width: 1px;
+    border-style: solid;
+    border-color:#ddd;
+	background-color:#fff;
+    color: #333;
+    white-space: nowrap;
+    -webkit-appearance: none;
+}
+.link-button:hover{
+	 background-color: #fafafa;
+	 color:#a30046;
+}
+.lihat{
+	position:relative;
+	right:-170px;
+	border-width: 1px;
+    border-style: solid;
+    border-color: #ddd;
+    background-color:#fff;
+    color: #333;
+    white-space: nowrap;
+    -webkit-appearance: none;
+	padding:4px 12px;
+	font-weight:bold;
+}
+.lihat:hover{
+	background-color: #fafafa;
+}
+.content{
+	background-color:#f5f5f5;
 }
 .content img{
 	display:inline-block;
@@ -123,28 +286,6 @@
 	margin-right:25px;
 	font-size:25px;
 }
-.high{
-	position:relative;
-	left:350px;
-	height:25px;
-	width:5%;
-	color:white;
-	background-color:#a30046;
-}
-.high:hover{
-	background-color:white;
-	color:black;
-}
-.low{
-	position:relative;
-	left:350px;
-	height:25px;
-	width:5%;
-	background-color:white;
-}
-.low:hover{
-	color:#a30046;
-}
 .content span img{
 	width:410px;
 	height:200px;
@@ -160,12 +301,16 @@
 	left:640px;
 	top:-200px;
 }
+.ff{
+	position:relative;
+	left:;
+}
 .ff img{
 	width:200px;
 	height:398px;
 	position:relative;
 	top:-602px;
-	left:80%;
+	right:-1070px;
 }
 .menu ul li span a{
 	color:yellow;
@@ -192,10 +337,6 @@
 	left:50px;
 	padding:10px;
 }
-.lihat{
-	position:relative;
-	left:390px;
-}
 .semua a{
 	position:relative;
 	color:white;
@@ -214,85 +355,92 @@
 .today span{
 	color:#be275e;
 	font-weight:bold;
-	position:relative;
-	top:10px;
-	margin:1%;
+	margin-left:60px;
+	margin-top:20px;
 	display:block;
 }
 .today img{
 	position:relative;
 	background-color:white;
 	width:15%;
-	height:120px;
-	left:60px;
+	height:30%;
 	display:inline-block;
+	bottom:-20px;
+	left:60px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
 }
 .today a:hover{
 	text-decoration:underline;
 }
 .today a{
-	color:black;
+	color: #333 !important;
 	font-size:13px;
 	position:relative;
-	left:60px;
+	left:55px;
+	bottom:-20px;
 	display:inline-block;
 	text-decoration:none;
+	margin-left:3px;
 }
 .mall{
 	background-color:white;
 	position:relative;
-	top:-600px;
+	top:-550px;
 }
 .bukamall span img{
 	width:250px;
-	height:300px;
+	height:250px;
 	position:relative;
 	left:50px;
-	padding:10px;
+	padding:px;
 	box-sizing:box-border;
+	margin-top:20px;
 }
 .bukamall img{
-	width:100px;
+	width:150px;
 	height:250px;
 	display:inline;
 	position:relative;
-	left:90px;
+	left:60px;
 	top:-10px;
+	margin-left:10px;
 	box-sizing:border-box;
-	margin-right:21px;
 	border:1px solid #eaeaea;
 }
+.buka-mart img{
+	display:inline-block;
+	height:100px;
+	width:120px;
+	position:relative;
+	left:300px;
+	margin-left:40px;
+	top:-70px;
+	box-sizing:border-box;
+	border-radius:10px;
+}
 .link{
-	color:black;
+	color:#333;
 	text-decoration:none;
 	position:relative;
-	left:350px;
-	margin-right:25px;
+	left:370px;
+	margin-right:80px;
 	top:-40px;
+	font-size:12px;
 }
 .lsb{
 	position:relative;
-	left:-900px;
+	right:-120px;
 	background-color:white;
 	top:-140px;
 }
 .lsb:hover{
 	color:#a30046;
 }
-.buka-mart img{
-	display:inline-block;
-	width:7%;
-	height:100px;
-	position:relative;
-	left:350px;
-	margin-right:35px;
-	top:-70px;
-	box-sizing:border-box;
-}
 .container{
 	position:relative;
 	background:white;
-	top:-600px;
+	top:-550px;
 	display:inline-block;
 	width:100%;
 }
@@ -308,10 +456,12 @@
 	padding:10px;
 	color:#be275e;
 	font-weight:bold;
+	margin-left:15px;
 }
 .nav-left img{
-	padding:10px;
+	margin-left:20px;
 	border:1px solid #eaeaea;
+	box-sizing:border-box;
 }
 .float-right:hover{
 	color:#a30046;
@@ -322,16 +472,25 @@
 .container2{
 	position:relative;
 	background:white;
-	top:-600px;
+	top:-500px;
 	display:inline-block;
 	width:100%;
 }
 .produk-left{
 	float:left;
 }
-.produk img{
+.produk-left{
+	font-size:16px;
 	padding:10px;
+	color:#be275e;
+	font-weight:bold;
+	margin-left:15px;
+	margin-bottom:15px;
+}
+.produk img{
+	margin-left:20px;
 	border:1px solid #eaeaea;
+	box-sizing:border-box;
 }
 .produk-right{
 	float:right;
@@ -352,7 +511,7 @@
 .container3{
 	position:relative;
 	background:white;
-	top:-600px;
+	top:-450px;
 	display:inline-block;
 	width:100%;
 }
@@ -364,6 +523,8 @@
 	padding:10px;
 	color:#be275e;
 	font-weight:bold;
+	margin-bottom:15px;
+	margin-left:15px;
 }
 .camilan-right{
 	float:right;
@@ -373,14 +534,17 @@
 	color:#be275e;
 }
 .camilan img{
-	padding:10px;
+	margin-left:20px;
 	box-sizing:border-box;
 	border:1px solid #eaeaea;
+}
+.clearfix{
+	clear:both;
 }
 .container4{
 	position:relative;
 	background:white;
-	top:-600px;
+	top:-400px;
 	display:inline-block;
 	width:100%;
 }
@@ -392,6 +556,8 @@
 	padding:10px;
 	color:#be275e;
 	font-weight:bold;
+	margin-left:15px;
+	margin-bottom:15px;
 }
 .voucher-right{
 	float:right;
@@ -401,14 +567,17 @@
 	color:#be275e;
 }
 .voucher img{
-	padding:10px;
+	margin-left:20px;
 	box-sizing:border-box;
 	border:1px solid #eaeaea;
+}
+.clearfix{
+	clear:both;
 }
 .container5{
 	position:relative;
 	background:white;
-	top:-600px;
+	top:-350px;
 	display:inline-block;
 	width:100%;
 }
@@ -420,6 +589,8 @@
 	padding:10px;
 	color:#be275e;
 	font-weight:bold;
+	margin-left:15px;
+	margin-bottom:15px;
 }
 .inspiration-right{
 	float:right;
@@ -429,14 +600,17 @@
 	color:#be275e;
 }
 .inspiration img{
-	padding:10px;
+	margin-left:20px;
 	box-sizing:border-box;
 	border:1px solid #eaeaea;
+}
+.clearfix{
+	clear:both;
 }
 .container6{
 	position:relative;
 	background:white;
-	top:-600px;
+	top:-300px;
 	display:inline-block;
 	width:100%;
 }
@@ -448,6 +622,8 @@
 	padding:10px;
 	color:#be275e;
 	font-weight:bold;
+	margin-left:15px;
+	margin-bottom:15px;
 }
 .kebutuhan-right{
 	float:right;
@@ -457,14 +633,17 @@
 	color:#be275e;
 }
 .kebutuhan img{
-	padding:10px;
+	margin-left:20px;
 	box-sizing:border-box;
 	border:1px solid #eaeaea;
+}
+.clearfix{
+	clear:both;
 }
 .container7{
 	position:relative;
 	background:white;
-	top:-600px;
+	top:-250px;
 	display:inline-block;
 	width:100%;
 }
@@ -476,6 +655,8 @@
 	padding:10px;
 	color:#be275e;
 	font-weight:bold;
+	margin-left:15px;
+	margin-bottom:15px;
 }
 .kecantikan-right{
 	float:right;
@@ -485,14 +666,17 @@
 	color:#be275e;
 }
 .kecantikan img{
-	padding:10px;
+	margin-left:20px;
 	box-sizing:border-box;
 	border:1px solid #eaeaea;
+}
+.clearfix{
+	clear:both;
 }
 .container8{
 	position:relative;
 	background:white;
-	top:-600px;
+	top:-200px;
 	display:inline-block;
 	width:100%;
 }
@@ -504,6 +688,8 @@
 	padding:10px;
 	color:#be275e;
 	font-weight:bold;
+	margin-left:15px;
+	margin-bottom:15px;
 }
 .aksesoris-right{
 	float:right;
@@ -513,14 +699,17 @@
 	color:#be275e;
 }
 .aksesoris img{
-	padding:10px;
+	margin-left:20px;
 	box-sizing:border-box;
 	border:1px solid #eaeaea;
+}
+.clearfix{
+	clear:both;
 }
 .container9{
 	position:relative;
 	background:white;
-	top:-600px;
+	top:-150px;
 	display:inline-block;
 	width:100%;
 }
@@ -532,6 +721,8 @@
 	padding:10px;
 	color:#be275e;
 	font-weight:bold;
+	margin-left:15px;
+	margin-bottom:15px;
 }
 .terbaru-right{
 	float:right;
@@ -541,14 +732,17 @@
 	color:#be275e;
 }
 .terbaru img{
-	padding:10px;
+	margin-left:20px;
 	box-sizing:border-box;
 	border:1px solid #eaeaea;
+}
+.clearfix{
+	clear:both;
 }
 .container10{
 	position:relative;
 	background:white;
-	top:-600px;
+	top:-100px;
 	display:inline-block;
 	width:100%;
 }
@@ -560,6 +754,8 @@
 	padding:10px;
 	color:#be275e;
 	font-weight:bold;
+	margin-left:15px;
+	margin-bottom:15px;
 }
 .elektronik-right{
 	float:right;
@@ -569,14 +765,17 @@
 	color:#be275e;
 }
 .elektronik img{
-	padding:10px;
+	margin-left:20px;
 	box-sizing:border-box;
 	border:1px solid #eaeaea;
+}
+.clearfix{
+	clear:both;
 }
 .container11{
 	position:relative;
 	background:white;
-	top:-600px;
+	top:-50px;
 	display:inline-block;
 	width:100%;
 }
@@ -588,6 +787,8 @@
 	padding:10px;
 	color:#be275e;
 	font-weight:bold;
+	margin-left:15px;
+	margin-bottom:15px;
 }
 .terbaru-right{
 	float:right;
@@ -597,14 +798,16 @@
 	color:#be275e;
 }
 .terbaru img{
-	padding:10px;
+	margin-left:20px;
 	box-sizing:border-box;
 	border:1px solid #eaeaea;
+}
+.clearfix{
+	clear:both;
 }
 .container12{
 	position:relative;
 	background:white;
-	top:-600px;
 	display:inline-block;
 	width:100%;
 }
@@ -616,6 +819,8 @@
 	padding:10px;
 	color:#be275e;
 	font-weight:bold;
+	margin-left:15px;
+	margin-bottom:15px;
 }
 .spesial-right{
 	float:right;
@@ -625,7 +830,702 @@
 	color:#be275e;
 }
 .spesial img{
-	padding:10px;
+	margin-left:20px;
 	box-sizing:border-box;
 	border:1px solid #eaeaea;
+}
+.clearfix{
+	clear:both;
+}
+.benefit-image{
+	margin-top:100px;
+}
+.jaminan{
+	position:relative;
+	right:-20px;
+}
+.dompet{
+	position:relative;
+	right:-150px;
+}
+.service{
+	position:relative;
+	right:-320px;
+}
+.award{
+	position:relative;
+	right:-320px;
+}
+.pengiriman{
+	position:relative;
+	right:-360px;
+}
+.komuniti{
+	position:relative;
+	right:-510px;
+	
+}
+.apps{
+	position:relative;
+	right:-870px;
+}
+.benefit-title{
+	margin-top:40px;
+}
+.benefit-title h3{
+	display:inline-block;
+	font-size: 12px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    color: #333;
+	margin-right:47px;
+	margin-left:20px;
+	position:relative;
+}
+.benefit-paragraf{
+	position:relative;
+	bottom:px;
+	font-size: 12px;
+    font-weight: bold;
+    line-height: 1.4;
+	max-width:200px;
+}
+.benefit-paragraf a{
+	text-decoration:none;
+	color:#be275e;
+}
+.benefit-paragraf a:hover{
+	text-decoration:underline;
+}
+.benefit-paragraf p{
+	font-size: 12px;
+    font-weight: bold;
+    line-height: 1.4;
+	text-align: -webkit-match-parent;
+}
+.payment{
+	margin-left:20px;
+	color:#333;
+}
+.metode{
+	position:relative;
+	left:210px;
+	top:-65px;
+	color:#333;
+}
+.cs{
+	position:relative;
+	left:430px;
+	top:-115px;
+	color:#333;
+}
+.jasa{
+	position:relative;
+	left:700px;
+	top:-165px;
+	color:#333;
+}
+.komunitas{
+	position:relative;
+	left:920px;
+	top:-215px;
+	color:#333;
+}
+.komunitas a{
+	text-decoration:none;
+	color:#be275e;
+}
+.komunitas a:hover{
+	text-decoration:underline;
+}
+.nikmati{
+	position:relative;
+	left:1130px;
+	top:-265px;
+}
+.nikmati a{
+	text-decoration:none;
+	color:#be275e;
+}
+.nikmati a:hover{
+	text-decoration:underline;
+}
+.line-bottom{
+	border-bottom: 1px solid #dddfe2;
+    font-size: 1px;
+    height: 1px;
+    margin-bottom: 8px;
+	text-align:center;
+	width:1276px;
+	position:relative;
+	left:20px;
+	top:-250px;
+}
+.clearfix{
+	clear:both;
+}
+.row-payment{
+	position:relative;
+	top:-230px;
+	width:100%;
+}
+.row-left{
+	display:inline-block;
+}
+.row-left h6{
+	font-size: 11px;
+    font-weight: normal;
+    line-height: 1.1em;
+    width: 76px;
+    height: 20px;
+    margin-left:10px;
+	padding:10px;
+    text-transform: uppercase;
+    color: #ccc;
+}
+.flag-logo{
+	max-width:600px;
+	position:relative;
+	right:-100px;
+	top:-40px;
+}
+.external-logo{
+	max-width: 600px;
+	display:inline-block;
+}
+.external-logo-list{
+	background-color: #fff;
+    display: inline-block;
+    width: 64px;
+    height: 32px;
+    margin: 1px;
+	list-style:none;
+}
+.bukadompet{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px 0px;
+    position: relative;
+    text-align: left;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+	display:inline-block;
+}
+.klikpay{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -32px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.mandiri{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -64px;
+    position: relative;
+    text-align: left;
+    width: 64px;
+    height: 32px;
+	display:inline-block;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.mandiri-ecash{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -96px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.climbcliks{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -128px;
+    position: relative;
+    text-align: left;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	display:inline-block;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.visa{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -160px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.mastercard{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -192px;
+    position: relative;
+    text-align: left;
+    width: 64px;
+    height: 32px;
+	display:inline-block;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.jcb{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -672px;
+    position: relative;
+    text-align: left;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	display:inline-block;
+	background-size:64px;
+}
+.indomaret{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -224px;
+    position: relative;
+    text-align: left;
+    width: 64px;
+    height: 32px;
+	display:inline-block;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.alfamart{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -544px;
+    position: relative;
+    text-align: left;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	display:inline-block;
+	background-size:64px;
+}
+.alfamidi{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -576px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.lawson{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -608px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.dandan{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -640px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.kredivo{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -256px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.akulaku{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -288px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.pospay{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -800px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.dana{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -768px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.bri-epay{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -832px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.oneklik{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -1056px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.row-right{
+	margin-left:20px;
+	max-width:350px;
+	position:relative;
+	right:-900px;
+	top:-150px;
+}
+.tulisan-bank-transfer{
+	vertical-align:top;
+	padding-right:12px;
+	position:relative;
+	left:-40px;
+	width:64px;
+}
+.tulisan-bank-transfer h6{
+	width:64px;
+	height: 20px;
+    margin: 1px;
+    text-transform: uppercase;
+    color: #ccc;
+	font-size: 11px;
+    font-weight: normal;
+    line-height: 1.1em;
+    display: inline-block;
+	text-align:left;
+}
+.logo-transfer{
+	vertical-align: top;
+	display:inline-block;
+	position:relative;
+	top:-30px;
+	right:-30px;
+}
+.external-logo-right{
+	display:-inline-block;
+	width:350px;
+}
+.external-logo-list-right{
+	background-color: #fff;
+    display: inline-block;
+    width: 64px;
+    height: 32px;
+    margin: 1px;
+}
+.bca{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -416px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.mandiri-right{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -448px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.bsm{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -704px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.bni{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -480px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.bri{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -512px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.permata{
+	background: url(https://s1.bukalapak.com/images/external_logo_payment_020119.png) 0px -736px;
+    position: relative;
+    text-align: left;
+	display:inline-block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.row-left-bottom{
+	display:inline-block;
+	position:relative;
+	top:-120px;
+	max-width:600px;
+}
+.tulisan-pengiriman{
+	display:inline-block;
+}
+.tulisan-pengiriman h6{
+	font-size: 11px;
+    font-weight: normal;
+    line-height: 1.1em;
+    width: 76px;
+    height: 20px;
+    margin-left:10px;
+	padding:10px;
+    text-transform: uppercase;
+    color: #ccc;
+}
+.logo-pengiriman{
+	text-align:left;
+	position:relative;
+	right:-100px;
+	top:-40px;
+}
+.external-logo-bottom{
+	max-width: 600px;
+	display:inline-block;
+	text-align:left;
+}
+.external-logo-list-bottom-left{
+	background-color: #fff;
+    display: inline-block;
+    width: 64px;
+	text-align:right;
+    height: 32px;
+    margin: 1px;
+	list-style:none;
+}
+.pickup{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px -352px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.jne{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px 0px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.tiki{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px -32px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.posindo{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px -64px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.wahana{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px -128px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.rpx{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px -96px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.sicepat{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px -192px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.gosend{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px -160px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.ninja{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px -224px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.jnt{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px -256px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.grab{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px -320px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.alfatrek{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px -416px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
+}
+.lionparcel{
+	background: url(https://s1.bukalapak.com/images/external_logo_courier_191218.png) 0px -448px;
+    position: relative;
+	display:block;
+    width: 64px;
+    height: 32px;
+	box-sizing:border-box;
+	border:1px solid #eaeaea;
+	text-indent:-9999px;
+	background-size:64px;
 }

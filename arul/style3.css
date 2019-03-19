@@ -2,6 +2,9 @@
 	margin:0;
 	padding:0;
 }
+body{
+	overflow-y:scroll;
+}
 .header{
 	background: #fff;
 	border:1px solid #eaeaea;
@@ -62,6 +65,7 @@
 	position:relative;
 	right:-110px;
 	bottom:-40px;
+	font-family: "Segoe UI",Arial,sans-serif;
 }
 .content input{
 	display:block;
